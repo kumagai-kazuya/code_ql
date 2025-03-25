@@ -22,11 +22,10 @@ jobs:
 
     # 2. CodeQLツールの設定
     - name: Set up CodeQL
-      uses: github/codeql-action/init@v2
+      uses: github/codeql-action/init@v3
       with:
         languages: 'javascript,python'  # スキャン対象の言語（例: JavaScriptとPython）
 
     # 3. CodeQLのスキャン実行
     - name: Perform CodeQL Analysis
-      uses: github/codeql-action/analyze@v2
-      
+      uses: github/codeql-action/analyze@v3
